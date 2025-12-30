@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NitroMod is your local Rocket League sandbox for trying cosmetics, titles, and overlays without touching live accounts.">
+    <title>NitroMod | Home</title>
+    <link rel="icon" type="image/png" href="images/NitroMod-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/76155aeaae.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('body').prepend($('<div>').load('assets/header.html'));
+        });
+    </script>
+
+    <div class="main-body">
+        <div class="home-shell">
+            <div class="home-copy">
+                <h1>NitroMod, the offline Rocket League sandbox</h1>
+                <p>Bring the polish of your favorite Rocket League mod site to NitroMod. Test cosmetics, plan screenshots, and create content in a private sandbox that mirrors the in-game experience—no account changes required.</p>
+                <div class="home-actions">
+                    <a href="downloads.html" class="download-btn">
+                        <i class="fa-solid fa-download" aria-hidden="true"></i>
+                        Download NitroMod
+                    </a>
+                    <p id="download-notice">Over <counter target="300"></counter> downloads!</p>
+                </div>
+            </div>
+            <div class="home-visual">
+                <img src="images/nitro-mod-titles.jpg" alt="NitroMod arena preview">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <small>&copy; 2025 NitroMod. Rocket League is a trademark of Psyonix LLC. No affiliation implied.</small>
+    </footer>
+
+    <canvas id="canvas" aria-hidden="true"></canvas>
+    <script src="assets/background.js"></script>
+    <script src="assets/counter.js"></script>
+</body>
+</html>

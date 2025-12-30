@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NitroMod | Showcase</title>
+    <link rel="icon" type="image/png" href="images/NitroMod-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/76155aeaae.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('body').prepend($('<div>').load('assets/header.html'));
+        });
+    </script>
+
+    <div class="main-body">
+        <div class="page-shell">
+            <p class="page-meta">Showcase</p>
+            <h1>See what the community builds with NitroMod</h1>
+            <p>Collect inspiration from creator loadouts, neon stadium shoots, and cinematic overlays made with NitroMod. We refresh the showcase weekly and shout out creators who experiment with bold presets.</p>
+            <div class="home-actions">
+                <a href="community.html" class="secondary-link">
+                    <span>Submit your preset</span>
+                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <small>&copy; 2025 NitroMod. Rocket League is a trademark of Psyonix LLC. No affiliation implied.</small>
+    </footer>
+
+    <canvas id="canvas" aria-hidden="true"></canvas>
+    <script src="assets/background.js"></script>
+    <script src="assets/counter.js"></script>
+</body>
+</html>

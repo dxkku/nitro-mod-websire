@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NitroMod | Contest</title>
+    <link rel="icon" type="image/png" href="images/NitroMod-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/76155aeaae.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('body').prepend($('<div>').load('assets/header.html'));
+        });
+    </script>
+
+    <div class="main-body">
+        <div class="page-shell">
+            <p class="page-meta">Creator contest</p>
+            <h1>Show off your cleanest NitroMod preset</h1>
+            <p>Submit your best cinematic loadout for a chance to win coaching sessions, merch, and a feature on the NitroMod home page. Entries are judged on creativity, composition, and how well the preset highlights NitroMod tooling.</p>
+            <div class="home-actions">
+                <a href="#" class="download-btn">
+                    <i class="fa-solid fa-upload" aria-hidden="true"></i>
+                    Submit your entry
+                </a>
+                <a href="#" class="secondary-link">
+                    <span>Read the contest rules</span>
+                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <small>&copy; 2025 NitroMod. Rocket League is a trademark of Psyonix LLC. No affiliation implied.</small>
+    </footer>
+
+    <canvas id="canvas" aria-hidden="true"></canvas>
+    <script src="assets/background.js"></script>
+    <script src="assets/counter.js"></script>
+</body>
+</html>

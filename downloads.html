@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NitroMod | Downloads</title>
+    <link rel="icon" type="image/png" href="images/NitroMod-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/76155aeaae.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('body').prepend($('<div>').load('assets/header.html'));
+        });
+    </script>
+
+    <div class="main-body main-body-stack">
+        <div class="downloads-hero page-shell">
+            <p class="page-meta">Downloads</p>
+            <h1>Pick your download</h1>
+            <p>Whether you are testing presets or curating full cinematic shoots, there is a NitroMod build that fits. Both tiers are client-only, offline safe, and come with transparent change logs.</p>
+        </div>
+
+        <div class="plans-grid">
+            <article class="plan-card">
+                <div class="plan-header">
+                    <h2>Basic</h2>
+                    <p class="plan-badge">Free</p>
+                </div>
+                <div class="plan-price">Free</div>
+                <ul class="plan-features">
+                    <li>Client-only sandbox; (no ban) risk</li>
+                    <li>Core cosmetic browser with presets</li>
+                    <li>Zero cost, zero ads, zero telemetry</li>
+                    <li>Access to the NitroMod community (100+ members)</li>
+                    <li>Creator-led troubleshooting support</li>
+                </ul>
+                <a href="https://raw.githubusercontent.com/dxkku/dxkku-websire/refs/heads/main/NitroMod.exe?token=GHSAT0AAAAAADRVNA7BMT54XSKV6LCNEQ7A2KTZCJQ" class="download-btn plan-cta" target="_blank" rel="noopener">
+                    <i class="fa-solid fa-download" aria-hidden="true"></i>
+                    Download now
+                </a>
+                <p class="plan-stats">Over <counter target="300"></counter> basic users</p>
+            </article>
+
+            <article class="plan-card plan-card-premium">
+                <div class="plan-header">
+                    <h2>Premium</h2>
+                    <p class="plan-badge">Creator tier</p>
+                </div>
+                <div class="plan-price">
+                    <span class="plan-price-old">$20.00</span>
+                    <span class="plan-price-current">$9.99</span>
+                </div>
+                <ul class="plan-features">
+                    <li>Unlocks the full NitroMod feature suite</li>
+                    <li>Priority fixes directly from the dev team</li>
+                    <li>Lifetime access with one-time activation</li>
+                    <li>Instant delivery plus guided setup</li>
+                    <li>Exclusive preset drops every month</li>
+                    <li>Ball protection (is not ban risk)</li>
+                    <li>Boost Overlay (is not ban risk)</li>
+                </ul>
+                <a href="https://discord.gg/11k" class="download-btn plan-cta" target="_blank" rel="noopener">
+                    <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                    Purchase now
+                </a>
+                <p class="plan-stats">Trusted by <counter target="1"></counter> premium creators</p>
+            </article>
+        </div>
+    </div>
+
+    <footer>
+        <small>&copy; 2025 NitroMod. Rocket League is a trademark of Psyonix LLC. No affiliation implied.</small>
+    </footer>
+
+    <canvas id="canvas" aria-hidden="true"></canvas>
+    <script src="assets/background.js"></script>
+    <script src="assets/counter.js"></script>
+</body>
+</html>
+

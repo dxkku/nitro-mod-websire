@@ -1,0 +1,39 @@
+<div class="header">
+    <div class="header-inner">
+        <div class="header-left">
+            <p class="header-left-text">NitroMod</p>
+        </div>
+        <nav class="tabbar" aria-label="Primary navigation">
+            <a href="index.html" class="tab-btn" data-page="index">Home</a>
+            <a href="community.html" class="tab-btn" data-page="community">Community</a>
+            <a href="downloads.html" class="tab-btn" data-page="downloads">Downloads</a>
+        </nav>
+        <div class="header-right">
+            <a href="https://discord.gg/11k" class="header-right-icon" target="_blank" rel="noopener" aria-label="Join the NitroMod Discord">
+                <i class="fa-brands fa-discord"></i>
+            </a>
+            <a href="https://github.com/dxkku" class="header-right-icon" target="_blank" rel="noopener" aria-label="NitroMod on GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+    </div>
+</div>
+<script>
+    (function() {
+        const applyActiveState = () => {
+            const path = window.location.pathname.split('/').pop();
+            const currentPage = (path && path.replace('.html', '')) || 'index';
+            document.querySelectorAll('.tab-btn').forEach(link => {
+                if (link.dataset.page === currentPage) {
+                    link.id = 'selected-tab';
+                }
+            });
+        };
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', applyActiveState);
+        } else {
+            applyActiveState();
+        }
+    })();
+</script>

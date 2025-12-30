@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NitroMod | Community</title>
+    <link rel="icon" type="image/png" href="images/NitroMod-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/76155aeaae.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('body').prepend($('<div>').load('assets/header.html'));
+        });
+    </script>
+
+    <div class="main-body community-layout">
+        <section class="community-section">
+            <div class="community-copy">
+                <h1>Join the Community!</h1>
+                <p>Join the NitroMod community for monthly announcements, troubleshooting, giveaways, and more! Discord community with over 53 people! We are a very positive and supporting space for creators and players.</p>
+                <a href="https://discord.gg/11k" class="discord-cta" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-discord" aria-hidden="true"></i>
+                    Join Discord
+                </a>
+                <p class="community-count">
+                    <counter data-counter="total" data-prefix="OVER " data-suffix="+ MEMBERS!" data-fallback=""></counter>
+                </p>
+            </div>
+            <aside class="community-widget-card">
+                <h2>Community Stats</h2>
+                <div class="community-widget-stats">
+                    <div class="widget-stat">
+                        <span class="widget-label">Members online</span>
+                        <span class="widget-value"><counter data-counter="online" data-suffix="+" data-fallback=""></counter></span>
+                    </div>
+                </div>
+                <div class="discord-widget-wrap">
+                    <iframe
+                        class="discord-widget"
+                        src="https://discord.com/widget?id=727299096955846756&theme=dark"
+                        width="100%"
+                        height="420"
+                        allowtransparency="true"
+                        frameborder="0"
+                        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+                        title="NitroMod Discord widget"></iframe>
+                </div>
+            </aside>
+        </section>
+    </div>
+
+    <footer>
+        <small>&copy; 2025 NitroMod. Rocket League is a trademark of Psyonix LLC. No affiliation implied.</small>
+    </footer>
+
+    <canvas id="canvas" aria-hidden="true"></canvas>
+    <script src="assets/background.js"></script>
+    <script src="assets/counter.js"></script>
+    <script src="assets/community-stats.js"></script>
+</body>
+</html>
